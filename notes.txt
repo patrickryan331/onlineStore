@@ -1,0 +1,27 @@
+### start app project
+npm start
+
+### sdtart server
+python3.py
+
+## GIT
+
+# initialize repo
+git initialize
+# add .gitignore
+
+
+# add a remote (github url)
+git add remote origin <REPO URL>
+
+# add files (stage changes)
+git add .
+
+# create a commit (snapshot)
+git commit -m "any message"
+
+#pus the first time
+git push -u origin main     ( or master )
+
+# push nth time
+git push
