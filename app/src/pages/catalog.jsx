@@ -8,7 +8,7 @@ const data = [
         "title": "Short Board 5'11",
         "price": 499.99,
         "catagory": "surfboard",
-        "image": "product1.webp",
+        "image": "product1.jpg",
         "_id": "123abc"
     },
     {
@@ -22,7 +22,7 @@ const data = [
         "title": "Fun Board 8'0",
         "price": 799.99,
         "catagory": "surfboard",
-        "image": "product3.webp",
+        "image": "product3.jpg",
         "_id": "789poy"
     },
     {
