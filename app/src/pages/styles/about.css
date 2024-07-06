@@ -1,0 +1,12 @@
+.about {
+    min-height: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.about .info {
+    margin-top: 20px;
+}
+.about .h2 {
+    color: white;
+}

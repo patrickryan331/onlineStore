@@ -1,0 +1,8 @@
+.qt-picker button{
+    margin: 5px;
+    
+}
+
+.qt-picker button:hover{
+    background-color: rgb(48, 61, 161);
+}

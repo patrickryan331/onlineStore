@@ -1,0 +1,10 @@
+.navbar{
+    background-color: #cae5ff;
+    font-weight: 700;
+}
+
+.navbar a:hover{
+    color: rgb(255, 85, 0);
+}
+
+
