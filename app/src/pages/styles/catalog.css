@@ -4,6 +4,7 @@
     background-color: rgb(131, 151, 249);
     background-image: url(/public/images/background1.jpg);
     background-size: cover;
+    border-top: 2px solid black;
 }
 
 .catalog h1{
