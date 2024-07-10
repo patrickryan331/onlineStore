@@ -1,0 +1,28 @@
+.home {
+    position: relative;
+    border-top: 2px solid black;
+}
+
+.home h1 {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    padding: 25px;
+    font-size: 50px;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+.home img {
+    margin-top: 10px;
+    width: 40%;
+}
+
+
+.home .info {
+position: absolute;
+top: 30%;
+left: 45%;
+
+}

@@ -123,7 +123,7 @@ const data = [
 
 function Catalog(){ 
     return(
-        <div className='catalog'>
+        <div className='catalog page'>
             <h1>Eastern Shore Surf Shop</h1>
         
             <div className='filterButton'>

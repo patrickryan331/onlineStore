@@ -1,52 +1,52 @@
 import './styles/navbar.css'
 
-function Navbar(){
-    return(
-            <div classNameName='navbar'>
+import { Link } from 'react-router-dom';
 
 
-<nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-    {/* <a class="navbar-brand" href="#">Navbar</a> */}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        {/* <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-        </li> */}
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Navigation
-        </a>
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">About Us</a></li>
-            <li><a class="dropdown-item" href="#">Surf Classes</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+function Navbar() {
+return (
+    <nav className="navbar navbar-expand-lg" >
+    <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+        Eastern Shore Surf Shop
+        </Link>
+        <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/">
+                Home
+            </Link>
+            <Link className="nav-link active" aria-current="page" to="/about">
+                About
+            </Link>
+            <Link className="nav-link active" aria-current="page" to="/catalog">
+                Catalog
+            </Link>
+            </li>
         </ul>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#">Cart <span class="badge bg-dark text-white"></span></a>
-        {/* <a class="nav-link disabled" aria-disabled="true">Disabled</a> */}
-        </li>
-    </ul>
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-primary" type="submit">Search</button>
-    </form>
+        <form className="d-flex" role="search">
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-primary" type="submit">
+            Search
+            </button>
+        </form>
+        </div>
     </div>
-</div>
-</nav>
-
-
-            </div>
-    );
+    </nav>
+);
 }
+
 
 
 export default Navbar;
