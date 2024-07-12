@@ -7,22 +7,68 @@
     color: white;
     text-align: center;
     margin: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
     padding: 25px;
     font-size: 50px;
     text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }
 
+.home h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.home h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+.home h4 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .home img {
     margin-top: 10px;
-    width: 40%;
+    width: 80%;
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 72px 4px rgba(0,0,0,0.87);
+    -moz-box-shadow: 0px 0px 72px 4px rgba(0,0,0,0.87);
+    box-shadow: 0px 0px 72px 4px rgba(0,0,0,0.87);
 }
 
 
 .home .info {
 position: absolute;
-top: 30%;
+top: 20%;
 left: 45%;
 
+}
+
+/* .home .home-top {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+} */
+
+
+
+.home .surf-camp-info {
+    display: inline-table;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background-color: rgb(106, 111, 153);
+    border: 1px solid black;
+    border-radius: 25px;
+    max-width: 900px;
+}
+
+.home button {
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 20px;
 }

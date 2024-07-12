@@ -8,7 +8,7 @@ return (
     <nav className="navbar navbar-expand-lg" >
     <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-        Eastern Shore Surf Shop
+        E. S. S. S. <img src="/images/surfIcon.jg" alt="" />
         </Link>
         <button
         className="navbar-toggler"
