@@ -12,7 +12,7 @@
 
 .product img{
     height: 180px;
-    width: 185px;
+    width: 175px;
 }
 
 
@@ -40,8 +40,17 @@
     margin-right: 10px;
 }
 
-.product .labelred {
-    color: red;
+.product .total {
+    color: rgb(237, 6, 6);
     margin-left: 10px;
+    font-size: 22px;
 }
 
+.product button {
+    font-size: 15px;
+}
+
+.product label {
+    font-size: 18px;
+    font-weight: 700;
+}

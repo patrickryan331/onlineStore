@@ -33,6 +33,12 @@ return (
             <Link className="nav-link active" aria-current="page" to="/catalog">
                 Catalog
             </Link>
+            <Link className="nav-link active" aria-current="page" to="/admin">
+                Admin
+            </Link>
+            <Link className="nav-link active" aria-current="page" to="/catalog">
+                Cart <i class="fa-solid fa-cart-shopping"></i>
+            </Link>
             </li>
         </ul>
         <form className="d-flex" role="search">

@@ -1,0 +1,38 @@
+.admin {
+    min-height: calc(100vh - 225px);
+}
+
+.admin h1{
+    margin-top: 15px;
+    color: white;
+}
+
+.admin .admin-container {
+    display: flex;
+    color: white;
+}
+
+.admin .sec-products {
+    flex: 1;
+}
+
+.admin .sec-coupons {
+    flex: 1;
+}
+
+.admin .form {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.admin button {
+    margin: 20px 0 5px 0;
+    font-size: 20px;
+}
+
+.admin label {
+    margin-top: 10px;
+    font-size: 20px;
+}
