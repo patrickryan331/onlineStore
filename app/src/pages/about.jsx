@@ -31,7 +31,7 @@ function About() {
     return ( 
         <div className="about page">
             <h2>About Us</h2>
-            <img src="/images/waveRider.jpg" alt="" />
+            <img src="/images/employees.jpg" alt="" />
             <p className='aboutP'><b>Eastern Shore Surf Shop</b> is a family owned and operated business located on the beach front of southeast Connecticut. We provide quality and affordable surfboards and gear for all ages, as well as surf classes thoughout the summer! Come by the shop to check out our weekly specials!</p>
             <table className='hours'>
                 <tr><th>Monday</th><td>Closed</td></tr>

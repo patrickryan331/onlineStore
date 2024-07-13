@@ -1,9 +1,15 @@
 import './styles/navbar.css'
-
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import DataContext from '../state/datacontext';
 
 
 function Navbar() {
+
+
+    const user = useContext(DataContext).user;
+
+
 return (
     <nav className="navbar navbar-expand-lg" >
     <div className="container-fluid">
@@ -42,6 +48,9 @@ return (
             </li>
         </ul>
         <form className="d-flex" role="search">
+
+                <button className='btn btn-outline-dark'>{user.name}</button>
+
             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button className="btn btn-outline-primary" type="submit">
             Search

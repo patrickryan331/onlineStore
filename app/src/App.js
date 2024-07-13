@@ -6,6 +6,7 @@ import About from './pages/about';
 import Admin from './pages/admin';
 import Home from './pages/home';
 import './App.css';
+import GlobalProvider from './state/globalProvider';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
+  <GlobalProvider>
     <BrowserRouter>
       <div className='App'>
         <Navbar />
@@ -30,6 +32,7 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
+  </GlobalProvider>
   );
 }
 
