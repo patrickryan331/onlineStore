@@ -24,5 +24,8 @@
 }
 
 .navbar i {
-    font-size: 21px;
+    font-size: 18px;
+    margin-left: 4px;
+    position: relative;
+    top: 6px
 }

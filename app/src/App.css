@@ -7,7 +7,9 @@
 
 .App {
   text-align: center;
-  background-color: rgb(56, 70, 136);
+  /* background-color: #384688; */
+background: rgb(28,32,45);
+background: linear-gradient(0deg, rgba(28,32,45,1) 0%, rgba(56,70,136,1) 100%);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

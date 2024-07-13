@@ -18,6 +18,9 @@
 
 .admin .sec-coupons {
     flex: 1;
+    background-color: rgb(106, 111, 153);
+    border: 1px solid black;
+
 }
 
 .admin .form {
@@ -35,4 +38,10 @@
 .admin label {
     margin-top: 10px;
     font-size: 20px;
+}
+
+.admin input {
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto;
 }

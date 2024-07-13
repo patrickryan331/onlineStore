@@ -16,9 +16,9 @@ function About() {
         if (isInfoVisible) {
             return (
                 <div  className='info'>
-                    <p><b>Email:</b>  EasterShoreSurfShop@gmail.com</p>
+                    <p><b>Email:</b>  EasterShoreSurfShop@FakeMail.com</p>
                     <p><b>Phone:</b> 203-555-1234</p>
-                    <p><b>Address:</b> 123 Main Street New London CT 06320</p>
+                    <p><b>Address:</b> 123 Fake Street New London CT 06320</p>
                 </div>
             );
         }
@@ -28,9 +28,10 @@ function About() {
     }
 
 
-    return (
+    return ( 
         <div className="about page">
             <h2>About Us</h2>
+            <img src="/images/waveRider.jpg" alt="" />
             <p className='aboutP'><b>Eastern Shore Surf Shop</b> is a family owned and operated business located on the beach front of southeast Connecticut. We provide quality and affordable surfboards and gear for all ages, as well as surf classes thoughout the summer! Come by the shop to check out our weekly specials!</p>
             <table className='hours'>
                 <tr><th>Monday</th><td>Closed</td></tr>
