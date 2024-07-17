@@ -33,10 +33,11 @@
     background-color: rgb(106, 111, 153);
     border: 1px solid black;
     border-radius: 5%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
+    margin: 25px auto 30px auto;
     max-width: 650px;
+    -webkit-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
 }
 
 .admin .sec-coupons {
@@ -44,10 +45,11 @@
     background-color: rgb(106, 111, 153);
     border: 1px solid black;
     border-radius: 5%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
+    margin: 25px auto 30px auto;
     max-width: 650px;
+    -webkit-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
 }
 
 .admin .form {

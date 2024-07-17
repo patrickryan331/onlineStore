@@ -13,6 +13,7 @@
     font-size: 20px;
     background-color: rgb(106, 111, 153);
     border: 1px solid black;
+    border-radius: 15px;
     max-width: 550px;
     font-size: 25px;
 }
@@ -25,6 +26,7 @@
     /* text-align: left; */
     background-color: rgb(106, 111, 153);
     border: 1px solid black;
+    border-radius: 15px;
     min-width: 325px;
 }
 
@@ -32,6 +34,7 @@
     padding: 3px;
     padding-left: 15px;
 }
+
 
 .about .aboutP {
     color: white;
@@ -43,6 +46,7 @@
     max-width: 900px;
     background-color: rgb(106, 111, 153);
     border: 1px solid black;
+    border-radius: 15px;
 
 }
 

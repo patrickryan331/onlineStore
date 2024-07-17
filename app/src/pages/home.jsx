@@ -16,8 +16,8 @@ function Home() {
             <div className="home-bottom">
                 <h1>Our Mission</h1>
                 <h3>Eastern Shore Surf Shop is dedicated to providing quality and affordable surfboards and gear for all ages, as well as surf classes throughout the summer. Come by the shop to check out our weekly specials!</h3>
-                <button className="btn btn-primary">Visit Our Store</button>
-                <img className="homeImg" src="/images/surfboardRow.jpg" alt="" />
+                <button className="btn btn-primary">About Us</button>
+                <img className="homeImg" src="/images/waveRider.jpg" alt="" />
             </div>
             <div className="home-bottom">
                 <h1>Our Products</h1>

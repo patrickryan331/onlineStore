@@ -8,6 +8,7 @@ function Navbar() {
 
 
     const user = useContext(DataContext).user;
+    const cart = useContext(DataContext).cart;
 
 
 return (
@@ -42,19 +43,22 @@ return (
             <Link className="nav-link active" aria-current="page" to="/admin">
                 Admin
             </Link>
-            <Link className="nav-link active" aria-current="page" to="/catalog">
-                Cart <i class="fa-solid fa-cart-shopping"></i>
-            </Link>
             </li>
         </ul>
         <form className="d-flex" role="search">
 
                 <button className='btn btn-outline-dark'>{user.name}</button>
 
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-primary" type="submit">
-            Search
-            </button>
+
+            {/* this was a search bar */}
+            {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> */}
+
+
+
+            <Link className="btn btn-outline-primary" to="/cart">
+                {cart.length} In Cart
+                <i class="fa-solid fa-cart-shopping"></i>
+            </Link>
         </form>
         </div>
     </div>

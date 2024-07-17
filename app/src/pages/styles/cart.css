@@ -1,0 +1,97 @@
+.cart {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+}
+
+.cart .cartContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart .cartList {
+    flex: 3;
+    background-color: rgb(106, 111, 153);
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 30px auto 30px auto;
+    max-width: 750px;
+    min-height: 500px;
+    -webkit-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+}
+
+.cart .cartMenu {
+    flex: 1;
+    background-color: rgb(106, 111, 153);
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 30px auto 30px auto;
+    max-width: 450px;
+    max-height: 500px;
+    -webkit-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 34px 11px rgba(0,0,0,0.56);
+}
+
+.cart h1{
+    font-weight: 900;
+    padding: 25px;
+    font-size: 50px;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+}
+
+
+.cart h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.cart h5 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    flex: 3;
+}
+
+.cart .deleteButton {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+    max-height: 35px;
+}
+
+
+.cart .checkoutButton{
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+
+.cart .cartProduct {
+    margin: 30px 10px 30px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(48, 45, 45);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.cart label {
+    flex: 1;
+    font-size: 25px;
+}
+
+.cart .totalPrice {
+    color: rgb(85, 255, 62);
+    font-weight: 800;
+}
+
+.cart .cartProduct img {
+    width: 100px;
+    height: 100px;
+}
