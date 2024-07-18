@@ -7,8 +7,7 @@
 
 
 .about .info {
-    /* margin-top: 30px;
-    margin-bottom: 10px; */
+    padding: 10px;
     margin: 30px auto 10px auto;
     font-size: 20px;
     background-color: rgb(106, 111, 153);

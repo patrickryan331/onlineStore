@@ -55,8 +55,8 @@ return (
 
 
 
-            <Link className="btn btn-outline-primary" to="/cart">
-                {cart.length} In Cart
+            <Link className="btn btn-primary" to="/cart">
+                {cart.length} Items In Cart
                 <i class="fa-solid fa-cart-shopping"></i>
             </Link>
         </form>

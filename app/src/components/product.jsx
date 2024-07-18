@@ -43,7 +43,7 @@ function Product(props){
                 <QuantityPicker onChange={handleQuantityChange} />
 
 
-                <button  onClick={add} className="btn btn-sm btn-primary">Add to Cart  <i class="fa-solid fa-square-plus"></i></button>
+                <button  onClick={add} className="btn btn-sm btn-primary btnToCart">Add to Cart  <i class="fa-solid fa-square-plus"></i></button>
             </div>
         </div>
     );

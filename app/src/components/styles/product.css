@@ -1,8 +1,8 @@
 .product {
     border: 1px solid;
     border-radius: 4px;
-    width: 250px;
-    height: 300px;
+    width: 270px;
+    height: 320px;
     display: inline-block;
     margin: 10px;
     background-color: rgb(208, 221, 254);
@@ -13,6 +13,9 @@
 .product img{
     height: 180px;
     width: 175px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: 1px solid black;
 }
 
 
@@ -48,10 +51,14 @@
 }
 
 .product button {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .product label {
     font-size: 18px;
     font-weight: 700;
+}
+
+.product .btnToCart {
+    font-size: 18px;
 }

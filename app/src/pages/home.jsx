@@ -1,4 +1,5 @@
 import "./styles/home.css"
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -16,14 +17,22 @@ function Home() {
             <div className="home-bottom">
                 <h1>Our Mission</h1>
                 <h3>Eastern Shore Surf Shop is dedicated to providing quality and affordable surfboards and gear for all ages, as well as surf classes throughout the summer. Come by the shop to check out our weekly specials!</h3>
-                <button className="btn btn-primary">About Us</button>
+                <Link to="/about">
+                    <button className="btn btn-primary">
+                        About Us
+                    </button>
+                </Link>
                 <img className="homeImg" src="/images/waveRider.jpg" alt="" />
             </div>
             <div className="home-bottom">
                 <h1>Our Products</h1>
                 <h2>New and Trendy Surfboards and Gear</h2>
                 <h3>Check out our latest collections and discover what's new in the surf world</h3>
-                <button className="btn btn-primary">View Our Catalog</button>
+                <Link to="/catalog">
+                    <button className="btn btn-primary">
+                        View Our Catalog
+                    </button>
+                </Link>
                 <img className="homeImg" src="/images/surfboardShop.jpg" alt="" />
                 
             </div>

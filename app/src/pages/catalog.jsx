@@ -116,6 +116,20 @@ const data = [
         "image": "pad2.jpeg",
         "_id": "397kvd"
     },
+    {
+        "title": "Surfboard Fins Quad",
+        "price": 79.99,
+        "catagory": "Accessories",
+        "image": "fins1.jpg",
+        "_id": "397kvd"
+    },
+    {
+        "title": "Surfboard Fins Tri",
+        "price": 89.99,
+        "catagory": "Accessories",
+        "image": "fins2.jpg",
+        "_id": "397kvd"
+    },
 ];
 
 

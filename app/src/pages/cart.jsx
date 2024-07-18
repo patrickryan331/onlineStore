@@ -21,20 +21,22 @@ function Cart() {
 
     return (
         <div className='cart page'>
+            <h1>Eastern Shore Surf Shop</h1>
             <h1>Cart</h1>
 
 
             <div className='cartContainer'>
                 <div className='cartList'>
-                    <h2>Cart List</h2>
-
+                    
+                    <h2>Your Items</h2>
+                    <hr />
                         {cart.map(prod => 
                         <div className='cartProduct'>
                             <img src={"/images/" + prod.image} alt="" />
                             <h5> {prod.title} </h5>
                             <label> {prod.quantity} </label>
                             <label> {prod.price} </label>
-                            <label className='totalPrice'>$total$ </label>
+                            <h6 className='totalPrice'>$total$ </h6>
                             <button className='btn btn-sm btn-danger deleteButton'>Remove</button>
 
                         </div>
@@ -49,10 +51,16 @@ function Cart() {
 
                 <div className='cartMenu'>
                     <h2>Total</h2>
-                    <h3>{getTotal()}</h3>
+                    <h3>$ {getTotal()}</h3>
 
                     <hr />
                     <button className='btn btn-primary checkoutButton'>Checkout</button>
+                    <hr />
+
+                    <div className='paymentOptions'>
+                    <h4>Payment Options</h4>
+                    <i class="fa-brands fa-cc-visa"></i>  <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-discover"></i> <i class="fa-brands fa-cc-apple-pay"></i> 
+                    </div>
 
 
                 </div>
