@@ -10,8 +10,23 @@ function GlobalProvider(props) {
     function addProductToCart(product) {
         console.log("Adding product to cart");
 
+
         var copy = [...cart];
-        copy.push(product);
+
+            let found = false;
+            for (var i = 0; i < copy.length; i++) {
+                let prod = copy[i];
+
+                if(prod._id == product._id) {
+                    prod.quantity += product.quantity;
+                    found =  true;
+                }
+            }
+            if(!found) {
+                copy.push(product);
+            }
+            
+
         setCart(copy);
 
     }
@@ -22,13 +37,14 @@ function GlobalProvider(props) {
 
 
     return (
-        <DataContext.Provider value={{
-            cart: cart,
-            user: user,
-            addProductToCart: addProductToCart,
-            resetCart: resetCart,
-        }}>
-            {props.children}
+        <DataContext.Provider 
+            value={{
+                cart: cart,
+                user: user,
+                addProductToCart: addProductToCart,
+                resetCart: resetCart,
+            }}>
+                {props.children}
         </DataContext.Provider>
     );
 }

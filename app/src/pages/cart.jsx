@@ -35,8 +35,8 @@ function Cart() {
                             <img src={"/images/" + prod.image} alt="" />
                             <h5> {prod.title} </h5>
                             <label> {prod.quantity} </label>
-                            <label> {prod.price} </label>
-                            <h6 className='totalPrice'>$total$ </h6>
+                            <label>$ {prod.price} </label>
+                            <h6 className='totalPrice'>$ {(prod.price) * (prod.quantity)} </h6>
                             <button className='btn btn-sm btn-danger deleteButton'>Remove</button>
 
                         </div>
@@ -50,7 +50,7 @@ function Cart() {
 
 
                 <div className='cartMenu'>
-                    <h2>Total</h2>
+                    <h2>Subtotal</h2>
                     <h3>$ {getTotal()}</h3>
 
                     <hr />

@@ -15,7 +15,7 @@ return (
     <nav className="navbar navbar-expand-lg" >
     <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-        E. S. S. S. <img src="/images/surfIcon.jg" alt="" />
+        E. S. S. S. <img className='navIcon' src="/images/surficon.png" alt="" />
         </Link>
         <button
         className="navbar-toggler"
@@ -35,10 +35,10 @@ return (
                 Home
             </Link>
             <Link className="nav-link active" aria-current="page" to="/about">
-                About
+                About Us
             </Link>
             <Link className="nav-link active" aria-current="page" to="/catalog">
-                Catalog
+                Shop
             </Link>
             <Link className="nav-link active" aria-current="page" to="/admin">
                 Admin
