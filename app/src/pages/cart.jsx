@@ -1,22 +1,22 @@
 import './styles/cart.css'
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import DataContext from '../state/datacontext';
 
 
-function Cart() {
+function Cart(props) {
 
     const cart = useContext(DataContext).cart;
 
 
-    function getTotal() {
-        let total = 0;
-        for (let i = 0; i<cart.length; i++) {
-            let prod = cart[i];
-            total +=(prod.quantity * prod.price);
-    }
+        function getTotal() {
+            let total = 0;
+            for (let i = 0; i<cart.length; i++) {
+                let prod = cart[i];
+                total +=(prod.quantity * prod.price);
+        }
 
-    return total.toFixed(2);
-}
+        return total.toFixed(2);
+    }
 
 
     return (
@@ -34,18 +34,16 @@ function Cart() {
                         <div className='cartProduct'>
                             <img src={"/images/" + prod.image} alt="" />
                             <h5> {prod.title} </h5>
-                            <label> {prod.quantity} </label>
-                            <label>$ {prod.price} </label>
-                            <h6 className='totalPrice'>$ {(prod.price) * (prod.quantity)} </h6>
+                            <label>${prod.price} </label>
+                            <label>x{prod.quantity} </label>
+                            <h6 className='totalPrice'>$ {((prod.price) * (prod.quantity)).toFixed(2)} </h6>
                             <button className='btn btn-sm btn-danger deleteButton'>Remove</button>
-
                         </div>
                     )}
 
 
 
                 </div>
-
 
 
 
@@ -76,3 +74,6 @@ function Cart() {
 
 
 export default Cart;
+
+
+

@@ -1,6 +1,6 @@
 import './styles/navbar.css'
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import DataContext from '../state/datacontext';
 
 
@@ -10,6 +10,13 @@ function Navbar() {
     const user = useContext(DataContext).user;
     const cart = useContext(DataContext).cart;
 
+    
+    const navigate = useNavigate();
+
+    const navigateToTop = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
 
 return (
     <nav className="navbar navbar-expand-lg" >
@@ -40,18 +47,15 @@ return (
             <Link className="nav-link active" aria-current="page" to="/catalog">
                 Shop
             </Link>
-            <Link className="nav-link active" aria-current="page" to="/admin">
-                Admin
-            </Link>
             </li>
         </ul>
         <form className="d-flex" role="search">
 
+        <button className="btn btn-outline-dark" onClick={() => navigateToTop('/admin')}>
+                        Admin
+                    </button>
+
                 <button className='btn btn-outline-dark'>{user.name}</button>
-
-
-            {/* this was a search bar */}
-            {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> */}
 
 
 

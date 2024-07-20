@@ -69,9 +69,9 @@ function Admin() {
                             <label className='form-label'>Price</label>
                             <input onBlur={handleProduct} name='price' type="number" className="form-control" />
 
-                            <label className='form-label'>Catagory</label>
+                            <label className='form-label category'>Category</label>
                             <select onBlur={handleProduct} className='form-select' name="catagory">
-                            <option value="Surfboards">-- Choose a Catagory --</option>
+                            <option value="Surfboards">-- Choose a Category --</option>
                             <option value="Surfboards">Surfboard</option>
                             <option value="Surf Wax">Surf Wax</option>
                             <option value="Wetsuits">Wetsuit</option>
@@ -81,8 +81,6 @@ function Admin() {
                         <button  onClick={saveProduct} className="btn btn-primary">Save Product</button>
 
                     </div>
-
-
 
 
                     <div className='sec-coupons'>
