@@ -34,6 +34,7 @@
     margin-right: 10px;
     font-weight: 900;
     font-size: 20px;
+    
 }
 
 .navbar .navIcon {
@@ -42,4 +43,8 @@
     margin-right: 30px;
     position: relative;
     bottom: 4px;
+}
+
+.navbar .cartBtn {
+    text-shadow: .5px .5px .5px rgb(0, 0, 0);
 }

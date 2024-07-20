@@ -59,7 +59,7 @@ return (
 
 
 
-            <Link className="btn btn-primary" to="/cart">
+            <Link className="btn btn-primary cartBtn" to="/cart">
                 {cart.length} Items In Cart
                 <i class="fa-solid fa-cart-shopping"></i>
             </Link>

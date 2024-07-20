@@ -8,6 +8,7 @@ function Cart(props) {
     const cart = useContext(DataContext).cart;
 
 
+
         function getTotal() {
             let total = 0;
             for (let i = 0; i<cart.length; i++) {
