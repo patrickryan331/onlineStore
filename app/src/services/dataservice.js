@@ -1,4 +1,6 @@
-const catagories = [  'Surfboards', 'Surf Wax', 'Wetsuits', 'Accessories']
+import axios from "axios";
+const catagories = [  'Surfboards', 'Surf Wax', 'Wetsuits', 'Accessories'];
+
 
 const data = [
     {
@@ -146,20 +148,22 @@ const data = [
 
 class DataService {
 
-    getProducts() {
+    async getProducts() {
     // call the server and get the products
-        return data;
+        // return data;
 
-
+        let response = await axios.get("http://127.0.0.1:5000/api/products")
+        return response.data
     }
 
 
 
-    getCategories() {
+    async getCategories() {
     // call the server and get the categories
-        return catagories;
+        // return catagories;
 
-
+    let response = await axios.get("http://127.0.0.1:5000/api/categories")
+    return response.data
     }
 
 

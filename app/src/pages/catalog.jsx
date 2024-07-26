@@ -6,20 +6,39 @@ import dataservice from '../services/dataservice';
 
 
 function Catalog(){ 
-    const [products, setProducts] = useState([])
+    const [products, setProducts ] = useState([])
     const [categories, setCategories] = useState([])
 
     // do something when the component loads
-    useEffect( function() {
+    useEffect(function() {
 
-        const prods = dataservice.getProducts();
-        setProducts(prods);
+        // const prods = dataservice.getProducts();
+        // setProducts(prods);
+        loadCatalog();
+        loadCategories();
 
-        const cats = dataservice.getCategories();
-        setCategories(cats);
+        // const cats = dataservice.getCategories();
+        // setCategories(cats);
 
     }, 
     []);
+
+
+    async function loadCatalog() {
+        // fetch data from server and set products
+
+        let prods = await dataservice.getProducts();
+        setProducts(prods)
+        console.log(prods);
+    };
+
+
+    async function loadCategories() {
+
+        let cats = await dataservice.getCategories();
+        setCategories(cats)
+        console.log(cats);
+    }
 
 
     return(

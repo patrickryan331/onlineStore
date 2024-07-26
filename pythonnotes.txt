@@ -16,3 +16,10 @@ windows:
     https://github.com/AdrianAguinaga/onlinestore-ch48.git
 
     
+
+
+
+to run the server
+console command
+
+    python3 server.py
