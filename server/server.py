@@ -48,10 +48,7 @@ def fix_id(obj):
 @app.post("/api/products")
 def saveProduct():
     newItem = request.get_json()
-    print (newItem)
     db.products.insert_one(newItem)
-    #mock the save
-    #products.append(newItem)
     return json.dumps(fix_id(newItem))
 
 
@@ -65,9 +62,37 @@ def saveCatalog():
 
 
 #### this  gets/reads the product added to the server
-@app.get("/api/s")
-def getProducts():
-    return json.dumps(items) 
+@app.get("/api/products/")
+def get_products():
+    ## read all products from db
+    cursor = db.products.find({})
+    results =  []
+
+    for prod in cursor:
+        results.append(fix_id(prod))
+
+    return json.dumps(results)
+
+
+@app.get("/api/categories")
+def get_catagories():
+    cursor = db.products.find({})
+    cats = []
+    for prod in cursor:
+        if "category" in prod:
+            cat = prod["category"]
+            if cat not in cats:
+                cats.append(prod["category"])
+            
+    return json.dumps(cats) 
+
+
+
+
+
+
+
+
 
 
 @app.get("/api/catalog")
@@ -80,9 +105,7 @@ def getTotalReport():
     return json.dumps(totalReport)
 
 
-@app.get("/api/products/category")
-def getCatagory():
-    return json.dumps(specialCatagory) 
+
 
 
 
